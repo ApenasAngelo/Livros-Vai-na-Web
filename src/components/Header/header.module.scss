@@ -1,19 +1,24 @@
 header {
-  height: 15vh;
+  height: 10vh;
   display: flex;
   align-items: center;
   justify-content: space-between;
   background: linear-gradient(90deg, #001b2f 0%, #005695 100%);
 }
 .boxLogo {
-  width: 23vw;
+  width: 18vw;
+  margin-left: 20px;
   display: flex;
   align-items: center;
-  justify-content: space-evenly;
+  justify-content: space-around;
+
+  img {
+    margin-bottom: 15px;
+  }
 
   h1 {
     color: white;
-    font-size: 25px;
+    font-size: 28px;
     font-weight: 700;
   }
 }
@@ -38,7 +43,7 @@ header {
   border: solid 2px white;
   width: 17vw;
   margin-right: 20px;
-  height: 6vh;
+  height: 5vh;
   display: flex;
   align-items: center;
   justify-content: space-around;
