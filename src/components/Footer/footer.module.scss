@@ -1,13 +1,10 @@
-footer {
-  height: 15vh;
-}
-
 .boxSocial {
   background-color: #005695;
-  height: 10vh;
+  height: 15vh;
   display: flex;
+  flex-direction: column;
   align-items: center;
-  justify-content: space-between;
+  justify-content: space-evenly;
   color: white;
   padding-left: 50px;
   padding-right: 50px;
@@ -17,7 +14,7 @@ footer {
   }
 
   nav {
-    width: 16vw;
+    width: 100%;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -31,4 +28,42 @@ footer {
   display: flex;
   align-items: center;
   justify-content: center;
+  text-align: center;
+  font-size: 75%;
+  padding: 5vh 10vw;
+}
+
+@media (min-width: 768px) {
+  .boxSocial {
+    nav {
+      justify-content: space-between;
+      width: 50%;
+    }
+  }
+
+  .boxEnd {
+    height: 5vh;
+    font-size: 100%;
+    padding: 0;
+  }
+}
+
+@media (min-width: 1024px) {
+  .boxSocial {
+    height: 10vh;
+    flex-direction: row;
+    justify-content: space-between;
+
+    nav {
+      width: 250px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+  }
+
+  .boxEnd {
+    font-size: 100%;
+    padding: 0;
+  }
 }

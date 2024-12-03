@@ -1,16 +1,18 @@
 header {
-  height: 10vh;
+  height: auto;
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: space-between;
   background: linear-gradient(90deg, #001b2f 0%, #005695 100%);
 }
 .boxLogo {
-  width: 18vw;
-  margin-left: 20px;
+  width: 100%;
+  margin-top: 20px;
+  margin-left: 0;
   display: flex;
   align-items: center;
-  justify-content: space-around;
+  justify-content: center;
 
   img {
     margin-bottom: 15px;
@@ -18,46 +20,102 @@ header {
 
   h1 {
     color: white;
-    font-size: 28px;
+    margin-left: 10px;
+    font-size: 20px;
     font-weight: 700;
   }
 }
 
 .boxMenu {
-  width: 35vw;
+  width: 100%;
+  margin: 2vh 0;
 
   ul {
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: space-evenly;
 
     a {
       color: white;
-      font-size: 20px;
+      font-size: 17px;
       font-weight: 400;
     }
   }
 }
 
 .boxInput {
-  border: solid 2px white;
-  width: 17vw;
-  margin-right: 20px;
-  height: 5vh;
-  display: flex;
-  align-items: center;
-  justify-content: space-around;
-  border-radius: 15px;
+  display: none;
+}
 
-  input {
-    outline: none;
-    background-color: transparent;
-    border: none;
-    color: white;
-    font-size: 15px;
-    padding-left: 6px;
-    &::placeholder {
-      color: white;
+@media (min-width: 1024px) {
+  header {
+    height: 10vh;
+    flex-direction: row;
+
+    .boxLogo {
+      width: 18vw;
+      margin-top: 0;
+      margin-left: 20px;
+      justify-content: left;
+
+      h1 {
+        margin-left: 10px;
+        font-size: 18px;
+      }
+    }
+
+    .boxMenu {
+      width: 35vw;
+      margin: 2vh 0;
+
+      ul {
+        justify-content: space-between;
+
+        a {
+          font-size: 20px;
+        }
+      }
+    }
+
+    .boxInput {
+      border: solid 2px white;
+      width: 170px;
+      margin-right: 20px;
+      height: 5vh;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      border-radius: 15px;
+      overflow: hidden;
+      padding-right: 6px;
+
+      input {
+        width: auto;
+        outline: none;
+        background-color: transparent;
+        border: none;
+        color: white;
+        font-size: 15px;
+        padding-left: 6px;
+
+        &::placeholder {
+          color: white;
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: 1440px) {
+  header {
+    .boxLogo {
+      h1 {
+        font-size: 22px;
+      }
+    }
+
+    .boxInput {
+      width: 17vw;
     }
   }
 }
