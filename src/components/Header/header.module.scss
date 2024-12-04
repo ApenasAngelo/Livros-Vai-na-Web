@@ -35,6 +35,18 @@ header {
     align-items: center;
     justify-content: space-evenly;
 
+    li {
+      transition: transform 0.1s;
+
+      &:hover {
+        transform: scale(1.1);
+      }
+
+      &:active {
+        transform: scale(0.9);
+      }
+    }
+
     a {
       color: white;
       font-size: 17px;
@@ -45,6 +57,18 @@ header {
 
 .boxInput {
   display: none;
+
+  img {
+    transition: transform 0.1s;
+
+    &:hover {
+      transform: scale(1.1);
+    }
+
+    &:active {
+      transform: scale(0.9);
+    }
+  }
 }
 
 @media (min-width: 1024px) {

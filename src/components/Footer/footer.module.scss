@@ -38,6 +38,18 @@
     nav {
       justify-content: space-between;
       width: 50%;
+
+      img {
+        transition: transform 0.1s;
+
+        &:hover {
+          transform: scale(1.1);
+        }
+
+        &:active {
+          transform: scale(0.9);
+        }
+      }
     }
   }
 
