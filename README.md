@@ -7,7 +7,8 @@ Este projeto é tem como objetivo ser o trabalho final do módulo 1 do curso de 
 [Link para o projeto]()
 
 ## 🖼️ Prévia
-![Prévia do Projeto](https://cdn-icons-png.flaticon.com/512/1887/1887098.png)
+![Prévia do Projeto em computadores](src\assets\preview-widescreen.png)
+![Prévia do Projeto em dispositivos móveis](src\assets\preview-mobile.png)
 
 ## ⚙️ Construção
 
