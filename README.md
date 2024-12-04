@@ -7,8 +7,8 @@ Este projeto é tem como objetivo ser o trabalho final do módulo 1 do curso de 
 [Link para o projeto](https://livros-vai-na-web-git-main-apenasangelo-team.vercel.app/)
 
 ## 🖼️ Prévia
-![Prévia do Projeto em computadores](src\assets\preview-widescreen.png)
-![Prévia do Projeto em dispositivos móveis](src\assets\preview-mobile.png)
+![Prévia do Projeto em computadores](./src/assets/preview-widescreen.png)
+![Prévia do Projeto em dispositivos móveis](./src/assets/preview-mobile.png)
 
 ## ⚙️ Construção
 
