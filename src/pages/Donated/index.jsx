@@ -1,5 +1,5 @@
 import S from "./donated.module.scss";
-import Bookcard from "../../components/BookCard";
+import Bookcard from "../../components/Bookcard";
 
 import book from "../../assets/example-book.png";
 

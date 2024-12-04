@@ -4,10 +4,11 @@
 Este projeto é tem como objetivo ser o trabalho final do módulo 1 do curso de fullstack do Vai na Web. O projeto consiste em uma página web que inicial com motivos para se doar livros e com uma header aonde se pode ver os livros doados em cards. A página também conta com um formulário para doação de livros.
 
 ## 🌐 Deploy da página
-[Link para o projeto]()
+[Link para o projeto](https://livros-vai-na-web-git-main-apenasangelo-team.vercel.app/)
 
 ## 🖼️ Prévia
-![Prévia do Projeto](https://cdn-icons-png.flaticon.com/512/1887/1887098.png)
+![Prévia do Projeto em computadores](src\assets\preview-widescreen.png)
+![Prévia do Projeto em dispositivos móveis](src\assets\preview-mobile.png)
 
 ## ⚙️ Construção
 
