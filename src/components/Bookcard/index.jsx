@@ -2,11 +2,13 @@ import S from "./bookcard.module.scss";
 
 export default function bookcard({ book }) {
   return (
-    <div className={S.bookCard}>
-      <img src={book.image} alt={book.title} />
-      <h3>{book.title}</h3>
-      <p>{book.author}</p>
-      <p>{book.year}</p>
-    </div>
+    <article className={S.bookCard} key={book.id}>
+      <div className={S.imageContainer}>
+        <img src={book.imagem_url} alt={book.titulo} />
+      </div>
+      <h3>{book.titulo}</h3>
+      <p>{book.autor}</p>
+      <p>{book.categoria}</p>
+    </article>
   );
 }
