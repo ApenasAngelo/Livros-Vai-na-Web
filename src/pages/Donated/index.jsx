@@ -30,14 +30,16 @@ export default function Doados() {
       <h2>Livros Doados</h2>
 
       <section className={S.boxBooks}>
-        <article>
-          <div className={S.imageContainer}>
-            <img src={book} alt="imagem do livro o protagonista" />
-          </div>
-          <h3>O Protagonista</h3>
-          <p>Susanne Andrade</p>
-          <p>Ficção</p>
-        </article>
+        {/* LIVRO ESTÁTICO PARA EXEMPLO */}
+        <Bookcard
+          book={{
+            imagem_url: book,
+            titulo: "O Protagonista",
+            autor: "Susanne Andrade",
+            categoria: "Ficção",
+            id: 0,
+          }}
+        />
 
         {books.map((book) => (
           <Bookcard key={book.id} book={book} />
