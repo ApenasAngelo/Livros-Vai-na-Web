@@ -1,7 +1,8 @@
 .principal {
-  height: 80vh;
+  min-height: calc(100vh - 200px);
   display: flex;
   justify-content: center;
+  padding: 3rem 1rem;
 
   * {
     font-weight: 400;
@@ -13,42 +14,66 @@
   justify-content: space-evenly;
   flex-direction: column;
   align-items: center;
+  max-width: 1200px;
+  width: 100%;
 
   h2 {
-    font-size: 18px;
+    font-size: 1.5rem;
+    color: #005695;
     text-align: center;
-    margin: 1vh 5vw;
+    margin-bottom: 2rem;
+    font-weight: 600;
   }
 
   form {
     border: solid 3px #005695;
-    width: 80%;
+    width: 100%;
+    max-width: 400px;
     height: 60vh;
     border-radius: 15px;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: space-evenly;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
 
     div {
       width: 100%;
-      margin: 5vh 0;
+      margin-bottom: 1.5rem;
       display: flex;
+      flex-direction: column;
       align-items: center;
       justify-content: space-evenly;
       color: #005695;
-      font-size: 16px;
+      font-size: 1rem;
+
+      label {
+        border: red 1px solid;
+        margin-bottom: 0.5rem;
+        font-weight: 500;
+      }
     }
 
     input {
       border: solid 2px #005695;
       width: 85%;
-      height: 5vh;
+      height: 45px;
       border-radius: 15px;
 
-      color: black;
-      font-size: 15px;
-      padding-left: 6px;
+      color: #333;
+      font-size: 1rem;
+      padding: 0 0.75rem;
+      transition: border-color 0.2s ease;
+
+      &:focus {
+        border-color: #003b66;
+        outline: none;
+        box-shadow: 0 0 0 2px rgba(0, 86, 149, 0.2);
+      }
+
+      &::placeholder {
+        color: #aaa;
+      }
     }
 
     button {
@@ -56,40 +81,40 @@
       border-radius: 15px;
       color: white;
       background-color: #005695;
-      width: 65%;
-      height: 6vh;
+      width: 100%;
+      max-width: 250px;
+      height: 48px;
+      font-size: 1.1rem;
+      font-weight: 500;
+      margin-top: 1.5rem;
+      cursor: pointer;
 
-      font-size: 20px;
-      font-weight: 400;
+      transition: background-color 0.2s ease, transform 0.1s ease;
 
-      margin-top: 4vh;
-
-      transition: background-color 0.1s;
       &:hover {
         background-color: #003b66;
       }
 
       &:active {
         background-color: #00213d;
+        transform: scale(0.98);
       }
     }
   }
 }
 
 @media (min-width: 768px) {
+  .principal {
+    padding: 4rem 2rem;
+  }
+
   .container {
     h2 {
-      font-size: 18px;
-      text-align: center;
-      margin: 1vh 5vw;
+      font-size: 1.75rem;
     }
 
     form {
-      width: 50%;
-
-      div {
-        font-size: 20px;
-      }
+      padding: 2.5rem 2rem;
     }
   }
 }
@@ -104,17 +129,18 @@
 
     form {
       width: 40%;
+      max-width: 1200px;
 
       div {
-        font-size: 28px;
+        font-size: 2rem;
       }
 
       input {
-        font-size: 18px;
+        font-size: 1.3rem;
       }
 
       button {
-        font-size: 22px;
+        font-size: 1.4rem;
       }
     }
   }

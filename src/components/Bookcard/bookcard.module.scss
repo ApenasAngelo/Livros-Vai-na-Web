@@ -7,14 +7,24 @@
   align-items: center;
   justify-content: space-evenly;
   border-radius: 15px;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  background-color: white;
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.3);
+  padding-bottom: 1rem;
+
+  &:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+  }
 
   .imageContainer {
     display: flex;
     width: 100%;
     aspect-ratio: 2/3; // Proporção padrão para capas de livros
     overflow: hidden; // Impede que a imagem vaze
-    border-radius: 15px;
     justify-content: center;
+    margin-top: 0.75rem;
+    margin-bottom: 0.75rem;
   }
 
   // Estilo para as imagens dentro dos cards
@@ -23,5 +33,24 @@
     object-fit: cover; // Mantém a proporção da imagem enquanto preenche o container
     object-position: center;
     border-radius: 5px;
+  }
+
+  h3 {
+    font-size: 1.1rem;
+    font-weight: 600;
+    margin: 0 1rem 0.4rem;
+    text-align: center;
+  }
+
+  p {
+    margin: 0.15rem 1rem;
+    font-size: 0.9rem;
+    color: #555;
+    text-align: center;
+  }
+
+  p:last-child {
+    color: #005695;
+    font-weight: 500;
   }
 }
