@@ -1,7 +1,7 @@
 # 📖 Livros Vai na Web
 
 ## 📜 Descrição
-Este projeto é tem como objetivo ser o trabalho final do módulo 1 do curso de fullstack do Vai na Web. O projeto consiste em uma página web que inicial com motivos para se doar livros e com uma header aonde se pode ver os livros doados em cards. A página também conta com um formulário para doação de livros.
+Este projeto é tem como objetivo ser o trabalho final do módulo 1 do curso de fullstack do Vai na Web. O projeto consiste em uma página web que inicial com motivos para se doar livros e com uma header aonde se pode ver os livros doados em cards. A página também conta com um formulário para doação de livros. Recentemente, foi incrementada com o trabalho final do módulo 2 do curso, disponível em [API Livros Vai na Web](https://github.com/ApenasAngelo/API-Livros-Vai-na-Web)
 
 ## 🌐 Deploy da página
 [Link para o projeto](https://livros-vai-na-web-tau.vercel.app/)
